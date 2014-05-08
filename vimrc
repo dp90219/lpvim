@@ -1,5 +1,22 @@
-
+set foldmethod=indent
 set nu
+
+"""""""""""""""""""""""""""""""""""""""""
+"
+" ruby
+"
+"""""""""""""""""""""""""""""""""""""""""
+" colorscheme blackboard
+set backspace=2
+set smartindent
+set mouse=a
+set incsearch
+set hlsearch
+set nowrapscan
+set nocompatible
+set list
+set listchars=tab:\|\
+
 
 """""""""""""""""""""""""""""""""""""""""
 
@@ -227,7 +244,8 @@ let g:auto_save = 1
 """"""""""""""""""""""""""""""""""""""""
 
   " Set the status line the way i like it
-  set statusline=%F:\ %l
+  set statusline=%F:\ %l\ %c
+
 
   " tell VIM to always put a status line in, even if there is only one window
   " this means I can also see what is the filename I am in, finally!
@@ -244,7 +262,7 @@ let g:auto_save = 1
 
   " Do not know how to use autocmd yet, so the following line not working
   " autocmd FileType text setlocal textwidth=78
-  set textwidth=78
+  " set textwidth=78
 
 
   " get rid of the silly characters in window separators
@@ -264,3 +282,5 @@ let g:auto_save = 1
   autocmd vimenter * if !argc() | NERDTree | endif
   map <C-n> :NERDTreeToggle<CR>
   autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+

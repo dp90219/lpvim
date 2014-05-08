@@ -1,3 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/liupeng'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/liupeng/JS/mini-harp/verify/assets'
+let g:netrw_dirhist_2='/home/liupeng/JS/mini-harp'
+let g:netrw_dirhist_3='/home/liupeng/.npm/connect/3.0.0-rc.1'
+let g:netrw_dirhist_4='/home/liupeng/dp90219.github.io'
+let g:netrw_dirhist_5='/home/liupeng/dp90219.github.io/_posts'
+let g:netrw_dirhist_6='/home/liupeng/JS/node-v0.10.26'
+let g:netrw_dirhist_7='/home/liupeng/.vim'
