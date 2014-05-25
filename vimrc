@@ -1,5 +1,16 @@
 set foldmethod=indent
+
 set nu
+
+set tw=120
+
+autocmd FileType markdown setlocal tw=80 formatoptions=tcmM
+
+set formatoptions=tcmM
+
+""""""""""""""""""""""""""""""
+
+autocmd FileType markdown colorscheme mac_classic
 
 """""""""""""""""""""""""""""""""""""""""
 "
@@ -64,6 +75,7 @@ let g:auto_save = 1
 """"""""""""""""""""""""""""""""""""""""
 
   " vim run in Mac terminal, does not have syntax highlighting without this
+  syntax enable
   syntax on
 
 """"""""""""""""""""""""""""""""""""""""
@@ -148,6 +160,7 @@ let g:auto_save = 1
   set shiftwidth=2
 
   " you can also set different indent level for other languages
+  "
   autocmd FileType c setlocal shiftwidth=4 tabstop=4
 
 """"""""""""""""""""""""""""""""""""""""
@@ -278,9 +291,9 @@ let g:auto_save = 1
 
  """""""""""""""""""""""""""""""""""""""""
  " nerdtree "
-  " autocmd vimenter * NERDTree
-  autocmd vimenter * if !argc() | NERDTree | endif
-  map <C-n> :NERDTreeToggle<CR>
-  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+ " autocmd vimenter * NERDTree
+ autocmd vimenter * if !argc() | NERDTree | endif
+ map <C-n> :NERDTreeToggle<CR>
+ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 
